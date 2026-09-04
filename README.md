@@ -8,6 +8,6 @@ Creates music using random numbers and music theory. Essentially starting with s
 - - `PYTHONPYCACHEPREFIX=.cache python -m src.main` or
 - - `PYTHONPYCACHEPREFIX=.cache python3 -m src.main`
 
-## Configuring music
+## Creating music
 - See `settings.yaml` for main configurable values.
 - See `theory` to change the musical tool box.
