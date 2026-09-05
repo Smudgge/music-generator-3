@@ -1,14 +1,33 @@
-# Tension to resolution progressions
+# All progressions should be in the key of C major or C minor.
+# All progressions will be expanded into every key.
+
+
 V_I: [
-  [G, C],  # Perfect cadence
-  [G7, C], # Perfect cadence
-  [Dhalf, C], # Half diminished cadence
-  [F, C],  # Plagal cadence
-  [Fm, C], # Plagal cadence
+  [G,     C], # Perfect cadence
+  [G7,    C], # Perfect cadence
+  [F,     C], # Plagal cadence
+  [Fm,    C], # Minor plagal cadence
+  [Dhalf, C], # Minor plagal cadence
+
+  [Gm,    Cm], # Authentic cadence
+  [G,     Cm], # Perfect cadence
+  [G7,    Cm], # Perfect cadence
+  [F,     Cm], # Plagal cadence
+  [Fm,    Cm], # Minor plagal cadence
+  [Dhalf, Cm], # Minor plagal cadence
 ]
 
+I_V_I: [
+  [C, V_I(C)], # Classic
+  [Cm, V_I(Cm)], # Classic
+]
 
-# Preperation to tension to resolution progressions
 II_V_I: [
-  [Dm, G, C],  # Perfect cadence
+  [Dm,    V_I],
+  [Dhalf, V_I],
+]
+
+I_II_V_I: [
+  [C, II_V_I(C)], # Classic
+  [Cm, II_V_I(Cm)], # Classic
 ]
