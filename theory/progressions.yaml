@@ -1,3 +1,4 @@
+# Tension to resolution progressions
 V_I: [
   [G, C],  # Perfect cadence
   [G7, C], # Perfect cadence
@@ -7,6 +8,7 @@ V_I: [
 ]
 
 
+# Preperation to tension to resolution progressions
 II_V_I: [
   [Dm, G, C],  # Perfect cadence
 ]
