@@ -1,9 +1,11 @@
 from src.components.system import System
+from src.utility.yaml import get_yaml_data
 
 
 # Settings
-name = "op1"
-play_music = True
+settings = get_yaml_data("settings.yaml")
+name = settings.get("name", "op1")
+play_music = settings.get("play_music", True)
 
 
 # 1) Music theory.

@@ -1,0 +1,28 @@
+# The classics
+C: [C, E, G] # Major
+Cm: [C, Eb, G] # Minor
+
+
+# The fun chords
+Caug: [C, E, G#] # Augmented
+Chalf: [C, Eb, Gb, Bb] # Half diminished
+Cdim: [C, Eb, Gb, Bbb] # Full diminished
+C7: [C, E, G, Bb] # Dominant 7
+
+
+# Augmented 6th chords
+Citalian: [C, E, Bb] # Augmented 6th (Italian)
+Cfrench: [C, E, Gb, Bb] # Augmented 6th (French)
+Cgerman: [C, E, G, Bb] # Augmented 6th (German)
+
+
+# Color chords
+Cm7: [C, Eb, G, Bb] # Minor 7
+Cmaj7: [C, E, G, B] # Major 7
+
+
+# Experimental crazy chords that somewhat follow
+# the pattern of the above
+Cm+maj7: [C, Eb, G, B] # Minor + Major 7
+Caug+maj7: [C, E, G#, B] # Augmented + Major 7
+Cdim+maj7: [C, Eb, Gb, B] # Diminished + Major 7

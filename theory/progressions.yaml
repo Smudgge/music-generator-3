@@ -1,0 +1,12 @@
+V_I: [
+  [G, C],  # Perfect cadence
+  [G7, C], # Perfect cadence
+  [Dhalf, C], # Half diminished cadence
+  [F, C],  # Plagal cadence
+  [Fm, C], # Plagal cadence
+]
+
+
+II_V_I: [
+  [Dm, G, C],  # Perfect cadence
+]
