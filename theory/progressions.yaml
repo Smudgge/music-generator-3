@@ -1,33 +1,45 @@
-# All progressions should be in the key of C major or C minor.
-# All progressions will be expanded into every key.
+# All progressions should be in the key of C major or C minor,
+# since this file will be expanded to support all keys.
+#
+# How this file works:
+# V represents a dominant chord.
+# I represents a resolution chord.
+# II represents a preparation chord.
+#
+# You can use II, V, and I to let the system fill in chords from 
+# other progressions that match.
 
 
-V_I: [
+V_I: [ # tention -> resolution
   [G,     C], # Perfect cadence
   [G7,    C], # Perfect cadence
   [F,     C], # Plagal cadence
   [Fm,    C], # Minor plagal cadence
   [Dhalf, C], # Minor plagal cadence
-
-  [Gm,    Cm], # Authentic cadence
   [G,     Cm], # Perfect cadence
   [G7,    Cm], # Perfect cadence
   [F,     Cm], # Plagal cadence
   [Fm,    Cm], # Minor plagal cadence
   [Dhalf, Cm], # Minor plagal cadence
+  [Gm,    Cm], # Authentic cadence
 ]
 
-I_V_I: [
-  [C, V_I(C)], # Classic
-  [Cm, V_I(Cm)], # Classic
+
+I_V_I: [ # tonic -> tention -> resolution
+  [C,  V, C],
+  [Cm, V, Cm],
 ]
 
-II_V_I: [
-  [Dm,    V_I],
-  [Dhalf, V_I],
+
+II_V_I: [ # preperation -> tention -> resolution
+  [Dm,    V, C],
+  [Dhalf, V, C],
+  [Dm,    V, Cm],
+  [Dhalf, V, Cm],
 ]
 
-I_II_V_I: [
-  [C, II_V_I(C)], # Classic
-  [Cm, II_V_I(Cm)], # Classic
+
+I_II_V_I: [ # tonic -> preperation -> tention -> resolution
+  [C, II, V, C],
+  [Cm, II, V, Cm],
 ]
