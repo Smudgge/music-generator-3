@@ -9,23 +9,19 @@
 violin:
   range: [G3, A7]
   midi_index: 40
-  standard_amount: 2
   order: 10
 
 viola:
   range: [C3, C7]
   midi_index: 41
-  standard_amount: 1
   order: 11
 
 cello:
   range: [C2, A6]
   midi_index: 42
-  standard_amount: 1
   order: 12
 
 contrabass:
   range: [E1, G4]
   midi_index: 43
-  standard_amount: 1
   order: 13

@@ -1,4 +1,4 @@
-from src.main import instruments_file
+from src.theory import instruments_file
 
 
 class Instrument:
@@ -16,21 +16,5 @@ class Instrument:
     this.order = data.get("order", 0)
 
 
-class Instruments:
-  instruments: list[Instrument] = []
-
-  def sort(this):
-    def sort_key(name: str):
-      data = instruments_file.get(name, {})
-      return data.get("order", float("inf"))
-    this.instruments.sort(key=sort_key)
-
-  def add(this, instrument_name: str):
-    instrument = Instrument(instrument_name)
-    for _ in range(instrument.standard_amount):
-      this.instruments.append(instrument)
-    this.sort()
-
-
-def decide_instruments() -> Instruments:
+def decide_instruments() -> list[Instrument]:
   return

@@ -1,0 +1,16 @@
+# The generator will just choose one at random.
+
+string_orchrestra: [
+  'violin',
+  'violin',
+  'viola',
+  'cello',
+  'contrabass',
+]
+
+string_quartet: [
+  'violin',
+  'violin',
+  'viola',
+  'cello'
+]
