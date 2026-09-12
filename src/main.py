@@ -1,10 +1,16 @@
 from src.components.system import System
 from src.generator._1_instruments import decide_instruments
 from src.memory import system
-from src.files import name, choices_file
+from src.files import name, choices_file, overwrite_choices
 from src.utility.yaml import save_yaml
 
 if __name__ == "__main__":
+
+  # If overwrite is set to true, we should clear
+  # the choices file.
+  if overwrite_choices: choices_file.clear()
+  print(choices_file)
+  print(overwrite_choices)
 
   # 1) Decide instruments.
   instruments = decide_instruments()
