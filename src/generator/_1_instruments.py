@@ -1,20 +1,17 @@
-from src.theory import instruments_file
-
-
-class Instrument:
-  range: list[str] = []
-  midi_index = 0
-  standard_amount = 0
-  order = 10
-
-  def __init__(this, instrument_name: str):
-    data = instruments_file.get(instrument_name, None)
-    if data == None: raise Exception(f"Carnt find instrument {instrument_name}")
-    this.range = data.get("range", [])
-    this.midi_index = data.get("midi_index", 0)
-    this.standard_amount = data.get("standard_amount", 0)
-    this.order = data.get("order", 0)
+from src.components.instrument import Instrument
+from src.files import instruments_file, ensembles_file
+from src.files import choices_file
+import random
 
 
 def decide_instruments() -> list[Instrument]:
-  return
+  # Check if instruments have already been chosen.
+  choice = choices_file.get("instruments", None)
+  if not choice: choice = random.choice(list(ensembles_file.values()))
+  # Create list of instruments.
+  instruments: list[Instrument] = []
+  for instrument_name in choice:
+    instruments.append(Instrument(instrument_name=instrument_name))
+  # Save choice and return instruments.
+  choices_file["instruments"] = choice
+  return instruments

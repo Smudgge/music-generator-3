@@ -18,3 +18,9 @@ def create_or_get_yaml_file(file_path: str) -> dict:
   with open(file_path, "w") as f:
       yaml.dump({}, f)
   return {}
+
+
+def save_yaml(file_path: str, data: dict):
+  with open(file_path, "w") as f:
+    yaml.dump(data, f)
+  

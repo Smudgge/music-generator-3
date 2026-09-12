@@ -1,6 +1,9 @@
+# This file should not be changed unless you doing somthing
+# super super funky. Maps note names to midi values in 4th octave range.
+
 Cbb: 58
 Cb: 59
-C: 60
+C: 60 # C4
 C#: 61
 C##: 62
 Dbb: 60

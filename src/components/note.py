@@ -1,5 +1,15 @@
-from src.theory import notes_file
+from src.files import notes_file
 
+
+# ---------- ---------- Constants ---------- ----------
+
+SEMIBREVE = 0
+MINIM = 2
+CROTCHET = 4
+QUAVER = 8
+
+
+# ---------- ---------- Helper Functions ---------- ----------
 
 def pitch_expanded(pitch: str) -> tuple[str, int]:
   return (pitch[0:-1], int(pitch[-1]))
@@ -43,6 +53,8 @@ def validate_midi(midi: int):
     raise ValueError(f"Midi pitch cannot be higher than G9 (127). pitch={midi}")
 
 
+# ---------- ---------- Classes ---------- ----------
+
 class Pitch:
   """
   C4 = 60
@@ -78,12 +90,6 @@ class Pitch:
     self.midi += semitones
     self.pitch = midi_to_pitch(self.midi)
     (self.letter, self.octave) = pitch_expanded(self.pitch)
-
-
-SEMIBREVE = 0
-MINIM = 2
-CROTCHET = 4
-QUAVER = 8
 
 
 class Note:

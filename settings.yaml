@@ -1,2 +1,7 @@
 composition_name: 'op1'
 play_music: true
+
+# Should the generator overwrite choices.yaml.
+# When true this will let you generate new music without
+# changing the target folder.
+overwrite_choices: false
