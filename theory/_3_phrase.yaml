@@ -1,0 +1,17 @@
+# What they mean:
+# 2AI
+# 2: Amount of bars (the generator could scale this)
+# A: Thematic material generated just for this phrase.
+# I: The suggested harmony.
+#
+# Harmony: (Note these dont have to be the I and V of the key.)
+# I: It should start with a tonic chord.
+# V: It should end in a V chord.
+# _: Anything as long as it works.
+
+
+#         [  idea  ] [fragment] [cadence]
+sentence: [2AI, 2AV, 1AI, 1A_,  1A_, 1AV]
+
+#       [Antecedent] [ consequent ]
+period: [2AI, 2BV,   2AI, 1BV, 1BI]

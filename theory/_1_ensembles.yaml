@@ -14,3 +14,8 @@ string_quartet: [
   'viola',
   'cello'
 ]
+
+violin_duet: [
+  'violin',
+  'violin',
+]

@@ -4,7 +4,7 @@
 # 
 # Meanings:
 # - "A"           : Any letter will be converted into a section.
-# - "A?"          : Optional section.
+# - "A%"          : Optional section.
 # - "A+"          : Regenerated with same theme, same section structure.
 # - "A*"          : Regenerated with same theme, different structure.
 # - "Intro"       : Will generate a introduction section.
@@ -15,5 +15,5 @@ binary: [A, B]
 ternary: [A, B, A+]
 ternary_repeated: [A, B, A]
 
-sonata_standard: [Intro?, A, B, Development, A+, B+, Coda?]
-sonata_rachmaninov: [Intro?, A, B, Development, B+, A*, Coda?]
+sonata_standard: [Intro%, A, B, Development, A+, B+, Coda%]
+sonata_rachmaninov: [Intro%, A, B, Development, B+, A*, Coda%]
